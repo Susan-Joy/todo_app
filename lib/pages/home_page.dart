@@ -19,7 +19,7 @@ ToDoDataBase db = ToDoDataBase();
 
 @override
   void initState() {
-      if(_myBox.get("TODDOLIST") == null){
+      if(_myBox.get("TODOLIST") == null){
         db.createInitialData();
       } else {
         db.loadData();     
